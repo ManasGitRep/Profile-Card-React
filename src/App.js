@@ -1,20 +1,22 @@
+import React from "react";
 import "./App.css";
-
 function App() {
-  return;
+  return (
+    <div className="card">
+      <Avatar />
+      <div className="data">
+        <Intro />
 
-  <div className="card">
-    <Avatar />
-    <div className="data">
-      <Intro />
-
-      <SkillList />
+        <SkillList />
+      </div>
     </div>
-  </div>;
+  );
 }
 
 function Avatar() {
-  return <img className="avatar" src="Sanji.jpg" alt="Manas Choudhary" />;
+  return (
+    <img className="avatar" src="AvatarImage/Avatar.jpg" alt="Avatar-image" />
+  );
 }
 function Intro() {
   return (
@@ -40,8 +42,8 @@ function SkillList() {
 function Skill(props) {
   return (
     <div className="skill-list" style={{ backgroundColor: props.color }}>
-      <span>{Props.skill}</span>
-      <span>{Props.emoji}</span>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
     </div>
   );
 }
