@@ -49,7 +49,7 @@ function App() {
 
 function Avatar() {
   return (
-    <img className="avatar" src="AvatarImage/Avatar.jpg" alt="Avatar-image" />
+    <img className="avatar" src="AvatarImage/Avatar.jpeg" alt="Avatar-image" />
   );
 }
 function Intro() {
